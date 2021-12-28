@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+}
+@import url("https://fonts.googleapis.com/css2?family=Frijole&display=swap");
+body {
+    overflow: hidden;
+    margin: 0;
+    background: rgb(255, 187, 0);
+}
+.container {
+    padding: 0 20px;
+    height: 100vh;
+    width: 100%;
+}
+.slides {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.slide__pineapple {
+    background: url("https://images.unsplash.com/photo-1550258987-190a2d41a8ba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1534&q=80");
+}
+.slide__strawberry {
+    background: url("https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZnJ1aXR8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+}
+.slide__orange {
+    background: url("https://images.unsplash.com/photo-1557800636-894a64c1696f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8ZnJ1aXR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60");
+}
+.slide__banana {
+    background: url("https://images.unsplash.com/photo-1528825871115-3581a5387919?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8ZnJ1aXR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60");
+}
+.slide__cherry {
+    background: url("https://images.unsplash.com/photo-1528820600606-0ef5600cbfee?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjd8fGZydWl0fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+}
+.slide__mango {
+    background: url("https://images.unsplash.com/photo-1587486936739-78df7470c7e0?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fG1hbmdvfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+}
+.slide__watermelon {
+    background: url("https://images.unsplash.com/photo-1582281298055-e25b84a30b0b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Njh8fGZydWl0fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+}
+
+.slide {
+    cursor: pointer;
+    flex: 1;
+    height: 80vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    margin: 10px;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 1px 1px 15px rgb(105, 107, 0);
+}
+.slide h2 {
+    font-family: "Frijole", cursive;
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+}
+.slide.active h2 {
+    opacity: 1;
+    transition: opacity 0.5s ease-in 0.3s;
+}
+.slide.active {
+    flex: 10;
+}
